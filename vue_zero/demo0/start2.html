@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue_2</title>
+  <script src="../src/vue.js"></script>
+  <style>
+    .ago{font-family: sans-serif;}
+    .active{color:red;}
+    .sos{border:1px solid #d3d3d3;}
+    div{width:300px;height:10px;}
+    .text_default{}
+    .text_center{text-align:center;}
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div v-bind:class="classObj" class="ago">{{ text }}</div>
+    <template v-if=" Math.random() > 0.5 ">
+      <p>大鱼0.5</p>
+    </template>
+    <template v-else>
+      <p>小雨0.5</p>
+    </template>
+  </div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        text: "lolalala",
+        classObj: {
+          active: true,
+          sos: true
+        }
+      }
+    })
+  </script>
+</body>
+</html>
