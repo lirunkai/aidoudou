@@ -1,5 +1,7 @@
 # vue
 
+#具体demo在分支里面,不会查看分支的请百度
+
 > A Vue.js project
 
 ## Build Setup
